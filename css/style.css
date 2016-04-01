@@ -1,0 +1,40 @@
+#content, .parsed {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.parsed {
+  border: solid;
+  padding: 10px;
+}
+
+.title {
+  color: Blue;
+  text-align: center;
+}
+
+.mark {
+  padding: 10px 5px;
+  resize: vertical;
+  overflow: auto;
+  width: 100%;
+  height: 564px;
+  margin: 0 auto;
+  display: block;
+  border: solid;
+}
+
+body {
+  background-color: #34addb;
+}
+
+footer {
+  background-color: black;
+  color: gray;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  position: relative;
+  text-align: center;
+  font-family: cursive, sans-serif;
+}
