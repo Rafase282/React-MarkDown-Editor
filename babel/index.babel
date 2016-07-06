@@ -1,13 +1,21 @@
 var MarkdownPreview = React.createClass({
   getInitialState: function() {
-    return {content: 'Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a\u0020\u0020\nline break\n\nText attributes * italic *, ** bold **,\n `monospace`, ~~ strikethrough ~~.\n\nShopping list : \n\n * apples\n * oranges\n * pears\n\nNumbered list : \n\n 1. apples\n 2. oranges\n 3. pears\n\nThe rain-- -not the reign-- -in\nSpain.\n\n * [Rafael Rodriguez](http : //freecodecamp.com/Rafase282)*\n'}
+    return {
+      content: 'Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a\u0020\u0020\nline break\n\nText attributes * italic *, ** bold **,\n `monospace`, ~~ strikethrough ~~.\n\nShopping list : \n\n * apples\n * oranges\n * pears\n\nNumbered list : \n\n 1. apples\n 2. oranges\n 3. pears\n\nThe rain-- -not the reign-- -in\nSpain.\n\n * [Rafael Rodriguez](http : //freecodecamp.com/Rafase282)*\n'
+    }
   },
   onChange: function(e) {
-    this.setState({content: e.target.value})
+    this.setState({
+      content: e.target.value
+    })
   },
   rawMarkup: function() {
-    var rawMarkup = marked(this.state.content, {sanitize: true});
-    return {__html: rawMarkup};
+    var rawMarkup = marked(this.state.content, {
+      sanitize: true
+    });
+    return {
+      __html: rawMarkup
+    };
   },
   render: function() {
     return (
@@ -18,8 +26,8 @@ var MarkdownPreview = React.createClass({
           </h1>
           <div className="col-xs-12 col-sm-6">
             <h3 className="title">Markdown</h3>
-            <textarea className="mark" onChange={this.onChange}>
-              {this.state.content}
+            <textarea className="mark" value={this.state.content}
+               onChange={this.onChange}> 
             </textarea>
           </div>
           <div className="col-xs-12 col-sm-6">
@@ -31,4 +39,4 @@ var MarkdownPreview = React.createClass({
     )
   }
 });
-ReactDOM.render(< MarkdownPreview />, document.getElementById('content'));
+ReactDOM.render( < MarkdownPreview / > , document.getElementById('content'));
