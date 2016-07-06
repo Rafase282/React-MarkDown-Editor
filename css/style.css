@@ -2,17 +2,14 @@
   margin: 0 auto;
   width: 100%;
 }
-
 .parsed {
   border: solid;
   padding: 10px;
 }
-
 .title {
   color: Blue;
   text-align: center;
 }
-
 .mark {
   padding: 10px 5px;
   resize: vertical;
@@ -23,11 +20,9 @@
   display: block;
   border: solid;
 }
-
 body {
   background-color: #34addb;
 }
-
 footer {
   background-color: black;
   color: gray;

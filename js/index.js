@@ -23,36 +23,49 @@ var MarkdownPreview = React.createClass({
   },
   render: function render() {
     return React.createElement(
-      "div",
-      { className: "container-fluid" },
+      "div", {
+        className: "container-fluid"
+      },
       React.createElement(
-        "div",
-        { className: "row" },
+        "div", {
+          className: "row"
+        },
         React.createElement(
-          "h1",
-          { className: "title" },
+          "h1", {
+            className: "title"
+          },
           "Markdown Previwer"
         ),
         React.createElement(
-          "div",
-          { className: "col-xs-12 col-sm-6" },
+          "div", {
+            className: "col-xs-12 col-sm-6"
+          },
           React.createElement(
-            "h3",
-            { className: "title" },
+            "h3", {
+              className: "title"
+            },
             "Markdown"
           ),
-          React.createElement("textarea", { className: "mark", value: this.state.content,
-            onChange: this.onChange })
+          React.createElement("textarea", {
+            className: "mark",
+            value: this.state.content,
+            onChange: this.onChange
+          })
         ),
         React.createElement(
-          "div",
-          { className: "col-xs-12 col-sm-6" },
+          "div", {
+            className: "col-xs-12 col-sm-6"
+          },
           React.createElement(
-            "h3",
-            { className: "title" },
+            "h3", {
+              className: "title"
+            },
             "HTML"
           ),
-          React.createElement("div", { className: "parsed", dangerouslySetInnerHTML: this.rawMarkup() })
+          React.createElement("div", {
+            className: "parsed",
+            dangerouslySetInnerHTML: this.rawMarkup()
+          })
         )
       )
     );
