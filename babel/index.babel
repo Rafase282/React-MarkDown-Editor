@@ -22,7 +22,7 @@ var MarkdownPreview = React.createClass({
       <div className="container-fluid">
         <div className="row">
           <h1 className="title">
-            Markdown Previwer
+            Markdown Previewer
           </h1>
           <div className="col-xs-12 col-sm-6">
             <h3 className="title">Markdown</h3>

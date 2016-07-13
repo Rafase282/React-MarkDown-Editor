@@ -34,7 +34,7 @@ var MarkdownPreview = React.createClass({
           "h1", {
             className: "title"
           },
-          "Markdown Previwer"
+          "Markdown Previewer"
         ),
         React.createElement(
           "div", {
